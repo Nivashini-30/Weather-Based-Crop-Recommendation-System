@@ -1,0 +1,7 @@
+District,Crop,Sowing Period,N (kg/ha),P (kg/ha),K (kg/ha),Soil Type,Rainfall Requirement (mm),Temperature Range (°C),Humidity (%),pH Range
+Virudhunagar,Groundnut,April–May,20,40,40,Sandy loam to loamy soils,600,25–35,65,6.0–7.0
+Virudhunagar,Gingelly (Sesame),Feb–Mar & Jun–Jul,35,35,35,Well-drained sandy loam,400,25–35,60,6.0–7.5
+Virudhunagar,Cotton,Feb–Mar,75,30,75,Black cotton soil,600,21–30,60,6.5–7.5
+Virudhunagar,Chillies,Sep–Nov,100,50,50,Well-drained loamy soils,500,20–30,65,6.0–7.0
+Virudhunagar,Maize,Jun–Sep,120,60,40,Well-drained loamy soils,700,21–27,70,6.0–7.0
+Virudhunagar,Minor Millets,Jun–Sep,40,20,20,Sandy loam to loamy soils,500,25–35,60,6.0–7.5
