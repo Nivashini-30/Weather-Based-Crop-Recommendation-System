@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Smart Crop Recommender</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="features-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg glass-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-circle">
+                    <img src="assets/images/logo.png" alt="Smart Crop Recommender Logo" class="logo-img">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recommend.html">Get Recommendation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Header -->
+    <section class="features-header py-5 mt-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Our Powerful Features</h1>
+            <p class="lead">Discover how our system can revolutionize your farming decisions</p>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-grid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Feature 1 - Soil Analysis -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card glass-card h-100" data-bs-toggle="modal" data-bs-target="#featureModal1">
+                        <div class="feature-icon text-center py-3">
+                            <i class="fas fa-flask"></i>
+                            <i class="fas fa-leaf ms-2"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Soil Analysis</h3>
+                            <p class="card-text">Comprehensive NPK and pH interpretation to understand your soil's health and nutrient levels.</p>
+                        </div>
+                        <div class="hover-content">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 - Weather Integration -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card glass-card h-100" data-bs-toggle="modal" data-bs-target="#featureModal2">
+                        <div class="feature-icon text-center py-3">
+                            <i class="fas fa-cloud"></i>
+                            <i class="fas fa-arrows-rotate ms-2"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Weather Integration</h3>
+                            <p class="card-text">Real-time weather data synchronization to provide accurate environmental insights.</p>
+                        </div>
+                        <div class="hover-content">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 - AI Prediction -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card glass-card h-100" data-bs-toggle="modal" data-bs-target="#featureModal3">
+                        <div class="feature-icon text-center py-3">
+                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-project-diagram ms-2"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">AI Prediction Engine</h3>
+                            <p class="card-text">Advanced machine learning models that analyze multiple factors to predict optimal crops.</p>
+                        </div>
+                        <div class="hover-content">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 - Recommendation System -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card glass-card h-100" data-bs-toggle="modal" data-bs-target="#featureModal4">
+                        <div class="feature-icon text-center py-3">
+                            <i class="fas fa-clipboard-check"></i>
+                            <i class="fas fa-seedling ms-2"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Recommendation System</h3>
+                            <p class="card-text">Personalized crop suggestions tailored to your specific soil and weather conditions.</p>
+                        </div>
+                        <div class="hover-content">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Modals -->
+    <!-- Modal 1 - Soil Analysis -->
+    <div class="modal fade" id="featureModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card">
+                <div class="modal-header">
+                    <h5 class="modal-title">Soil Analysis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-flask feature-modal-icon me-2"></i>
+                        <i class="fas fa-leaf feature-modal-icon"></i>
+                    </div>
+                    <p>Our system analyzes key soil parameters including:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-transparent">Nitrogen (N) levels - Essential for leaf growth</li>
+                        <li class="list-group-item bg-transparent">Phosphorus (P) content - Important for root development</li>
+                        <li class="list-group-item bg-transparent">Potassium (K) measurements - Crucial for overall plant health</li>
+                        <li class="list-group-item bg-transparent">Soil pH balance - Affects nutrient availability</li>
+                        <li class="list-group-item bg-transparent">Organic matter content - Improves soil structure</li>
+                    </ul>
+                    <p>This comprehensive analysis ensures your crop recommendations are perfectly tailored to your soil's unique characteristics.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Weather Integration -->
+    <div class="modal fade" id="featureModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card">
+                <div class="modal-header">
+                    <h5 class="modal-title">Weather Integration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cloud-sun feature-modal-icon"></i>
+                    </div>
+                    <p>Our real-time weather integration provides:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-transparent">Current temperature data</li>
+                        <li class="list-group-item bg-transparent">Humidity levels</li>
+                        <li class="list-group-item bg-transparent">Rainfall predictions</li>
+                        <li class="list-group-item bg-transparent">Seasonal weather patterns</li>
+                        <li class="list-group-item bg-transparent">Microclimate considerations</li>
+                    </ul>
+                    <p>By combining historical data with current conditions, we ensure your crops are recommended for both immediate and future weather scenarios.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - AI Predictions -->
+    <div class="modal fade" id="featureModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card">
+                <div class="modal-header">
+                    <h5 class="modal-title">AI Predictions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-brain feature-modal-icon"></i>
+                    </div>
+                    <p>Our advanced AI prediction system offers:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-transparent">Machine learning-based crop suitability analysis</li>
+                        <li class="list-group-item bg-transparent">Yield potential estimations</li>
+                        <li class="list-group-item bg-transparent">Disease resistance matching</li>
+                        <li class="list-group-item bg-transparent">Growth cycle optimization</li>
+                        <li class="list-group-item bg-transparent">Continuous learning from new data</li>
+                    </ul>
+                    <p>The system constantly improves its recommendations based on thousands of data points from similar farming conditions worldwide.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Recommendation System -->
+    <div class="modal fade" id="featureModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card">
+                <div class="modal-header">
+                    <h5 class="modal-title">Recommendation System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-clipboard-check feature-modal-icon me-2"></i>
+                        <i class="fas fa-seedling feature-modal-icon"></i>
+                    </div>
+                    <p>Our recommendation system provides:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-transparent">Personalized crop suggestions</li>
+                        <li class="list-group-item bg-transparent">Multiple suitable alternatives</li>
+                        <li class="list-group-item bg-transparent">Detailed rationale for each recommendation</li>
+                        <li class="list-group-item bg-transparent">Seasonal planting advice</li>
+                        <li class="list-group-item bg-transparent">Resource optimization tips</li>
+                    </ul>
+                    <p>We translate complex data into simple, actionable recommendations that any farmer can understand and implement.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Ready to Get Smart Recommendations?</h2>
+            <a href="recommend.html" class="btn btn-glass btn-lg px-5">Try It Now</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

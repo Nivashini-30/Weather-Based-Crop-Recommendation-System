@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Crop Recommender</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .navbar {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .hero-section {
+      padding-top: 120px; /* fixes hidden heading */
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="recommend.html">Get Recommendation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section" style="background-image: url('assets/hero-bg.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center hero-content">
+        <h1 class="display-3 fw-bold mb-4 text-white">Smart Crop Recommender</h1>
+        <p class="lead mb-5 text-white">Grow Smarter, Not Harder — Powered by Weather</p>
+        <a href="recommend.html" class="btn btn-custom btn-lg">Get Started <i class="fas fa-arrow-right ms-2"></i></a>
+        <div class="mt-5"><a href="features.html" class="text-decoration-none text-dark"><i class="fas fa-chevron-down floating"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 glass-effect">
+  <div class="container text-center"><p class="mb-0">&copy; 2024 Smart Crop Recommender. All rights reserved.</p></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

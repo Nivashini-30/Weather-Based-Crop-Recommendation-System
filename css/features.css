@@ -1,0 +1,78 @@
+
+/* Background and font to match the index page */
+body.features-page {
+  background: linear-gradient(to bottom right, #d0f8ce, #c0f5e4);
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.features-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.features-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Feature grid layout */
+.features-grid .feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+}
+
+.features-grid .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon i {
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.hover-content {
+  font-size: 0.9rem;
+  color: #00796b;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .features-grid .row > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .features-header h1 {
+    font-size: 2.5rem;
+  }
+}

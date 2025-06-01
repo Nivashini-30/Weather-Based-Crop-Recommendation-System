@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Recommendation - Smart Crop Recommender</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recommend.html">Get Recommendation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <!-- Input Form -->
+            <div class="col-lg-6 mb-4">
+                <div class="card glass-effect">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Enter Soil & Weather Data</h2>
+                        <form id="recommendationForm">
+                            <!-- Soil Data -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Soil Data</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label for="nitrogen" class="form-label">Nitrogen (N)</label>
+                                        <input type="number" class="form-control" id="nitrogen" name="nitrogen" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="phosphorus" class="form-label">Phosphorus (P)</label>
+                                        <input type="number" class="form-control" id="phosphorus" name="phosphorus" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="potassium" class="form-label">Potassium (K)</label>
+                                        <input type="number" class="form-control" id="potassium" name="potassium" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Weather Data -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Weather Data</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="city" class="form-label">City Name</label>
+                                        <input type="text" class="form-control" id="city" name="city" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="rainfall" class="form-label">Rainfall (mm)</label>
+                                        <input type="number" class="form-control" id="rainfall" name="rainfall" required>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mt-2" id="manualWeatherInputs">
+                                    <div class="col-md-6">
+                                        <label for="temperature" class="form-label">Temperature (°C)</label>
+                                        <input type="number" class="form-control" id="temperature" name="temperature" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="humidity" class="form-label">Humidity (%)</label>
+                                        <input type="number" class="form-control" id="humidity" name="humidity" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- pH Value -->
+                            <div class="mb-4">
+                                <h4 class="mb-3">Soil pH</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="ph" class="form-label">pH Value</label>
+                                        <input type="number" class="form-control" id="ph" name="ph" step="0.1" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-custom btn-lg w-100">
+                                Get Recommendation <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Display -->
+            <div class="col-lg-6">
+                <div class="card glass-effect" id="resultCard" style="display: none;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title mb-4">Recommended Crop</h2>
+                        <div class="crop-image mb-4">
+                            <img src="" alt="Recommended Crop" id="cropImage" class="img-fluid rounded">
+                        </div>
+                        <h3 class="crop-name mb-3" id="cropName"></h3>
+                        <p class="crop-description" id="cropDescription"></p>
+                        <div class="mt-4">
+                            <button class="btn btn-custom" onclick="window.location.reload()">
+                                Try Another Recommendation <i class="fas fa-redo ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 glass-effect mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Smart Crop Recommender. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
